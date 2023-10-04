@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class DecathlonPointsResponse {
+
     private int speed100MSeconds;
     private int longJumpMeters;
     private int shotPutMeters;

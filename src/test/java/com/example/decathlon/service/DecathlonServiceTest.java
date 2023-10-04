@@ -3,10 +3,10 @@ package com.example.decathlon.service;
 import com.example.decathlon.model.DecathlonMarksRequest;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class DecathlonServiceTest {
-    DecathlonMarksRequest pierceLepageMarks= new DecathlonMarksRequest(
+    DecathlonMarksRequest pierceLepageMarks = new DecathlonMarksRequest(
             "00:00:10.450",
             7.59,
             15.81,
@@ -18,19 +18,19 @@ class DecathlonServiceTest {
             60.90,
             "00:04:39.880"
     );
-    DecathlonMarksRequest janekOiglaneMarks  = new DecathlonMarksRequest(
-                "00:00:10.940",
-                        7.47,
-                        15.08,
-                        2.02,
-                        "00:00:48.410",
-                        "00:00:14.510",
-                        40.85,
-                        5.10,
-                        70.45,
-                        "00:04:23.430"
+    DecathlonMarksRequest janekOiglaneMarks = new DecathlonMarksRequest(
+            "00:00:10.940",
+            7.47,
+            15.08,
+            2.02,
+            "00:00:48.410",
+            "00:00:14.510",
+            40.85,
+            5.10,
+            70.45,
+            "00:04:23.430"
     );
-    DecathlonService decathlonService= new DecathlonService();
+    DecathlonService decathlonService = new DecathlonService();
 
     @Test
     void calculate() {

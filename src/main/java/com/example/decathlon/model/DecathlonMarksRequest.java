@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class DecathlonMarksRequest {
+
     public static final String TIME_PATTERN = "^([0-5]?[0-9]):([0-5]?[0-9]):([0-5]?[0-9])\\.([0-9]{3})$";
 
     public static final String INVALID_TIME_FORMAT = "Invalid time format";
@@ -43,6 +44,4 @@ public class DecathlonMarksRequest {
 
     @Pattern(regexp = TIME_PATTERN, message = INVALID_TIME_FORMAT)
     private String speed1500MSeconds;
-
-
 }

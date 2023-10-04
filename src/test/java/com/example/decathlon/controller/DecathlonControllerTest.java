@@ -21,11 +21,14 @@ class DecathlonControllerTest {
     @Mock
     DecathlonService decathlonService;
 
-    @InjectMocks private DecathlonController decathlonController;
+    @InjectMocks
+    private DecathlonController decathlonController;
+
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        this.mockMvc = MockMvcBuilders.standaloneSetup(decathlonController).build();    }
+        this.mockMvc = MockMvcBuilders.standaloneSetup(decathlonController).build();
+    }
 
     @Test
     void receiveDecathlonMarks() throws Exception {
@@ -42,12 +45,13 @@ class DecathlonControllerTest {
                 "00:04:39.880");
 
         mockMvc.perform(post("/decathlon/calculate")
-                .contentType(MediaType.APPLICATION_JSON)
-                .accept(MediaType.APPLICATION_JSON)
-                .content(asJsonString(pierceLepageMarks)))
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .accept(MediaType.APPLICATION_JSON)
+                        .content(asJsonString(pierceLepageMarks)))
                 .andExpect(status().isOk());
         Mockito.verify(decathlonService).calculate(pierceLepageMarks);
     }
+
     private static String asJsonString(final Object obj) {
         try {
             ObjectMapper objectMapper = new ObjectMapper();

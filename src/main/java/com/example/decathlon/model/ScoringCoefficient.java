@@ -2,6 +2,7 @@ package com.example.decathlon.model;
 
 
 public class ScoringCoefficient {
+
     public static final double A_100_M = 25.4348;
     public static final double B_100_M = 18.00;
     public static final double C_100_M = 1.81;
@@ -32,6 +33,7 @@ public class ScoringCoefficient {
     public static final double A_1500_M = 0.03768;
     public static final double B_1500_M = 480.00;
     public static final double C_1500_M = 1.85;
+
     private ScoringCoefficient() {
     }
 }

@@ -42,7 +42,6 @@ public class DecathlonService {
 
     public int calculate100mScore(String timeStr) {
         return calculateScores(ScoringCoefficient.A_100_M, ScoringCoefficient.B_100_M, ScoringCoefficient.C_100_M, getTimeAsDouble(timeStr));
-
     }
 
     public int calculateLongJumpScore(double longJumpMeters) {
