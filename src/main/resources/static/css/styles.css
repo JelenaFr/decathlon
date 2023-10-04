@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.calculator {
+    width: 700px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.output {
+    text-align: right;
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#outputField {
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: 24px;
+    outline: none;
+    cursor: default;
+}
+
+.sports {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.sport {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.sport-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.sport-input {
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70px;
+
+}
+
+.calculate-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reset-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.action-button {
+    flex: 1;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-control[type="time"] {
+    width: 150px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9);
+}
